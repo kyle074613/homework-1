@@ -1,5 +1,6 @@
 *{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0;
 }
 
 header{
@@ -12,8 +13,9 @@ header{
 
 body{
     background-image: url(../images/pipes/pipes.png);
-    margin: 0;
-    margin-top: -21px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 h1{
@@ -28,6 +30,7 @@ h2{
     padding-bottom: 25px;
     border-bottom: 2px solid #cccccc;
     color: #4aaaa5;
+    margin-bottom: 20px;
 }
 
 p{
@@ -36,10 +39,18 @@ p{
 }
 
 a{
+    color: #ffffff;
     text-decoration: none;
 }
 
 footer{
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+    
 }
 
 .innerheader{
@@ -53,15 +64,45 @@ footer{
     right: 0;
     bottom: 15%;
 }
+
 .content{
     width: 920px;
     margin: 30px auto;
     background-color: #ffffff;
     padding: 0 20px 20px 20px;
     color: #777777;
-    border: 1px solid #cccccc;
+    border: 1px solid #dddddd;
+    overflow: auto;
 }
 
+.wrapper{
+    flex: 1;
+}
+
+.imgholder{
+    float: left;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+}
+
+.imgholder img{
+    width: 100%;
+    height: 100%;
+}
+
+.projecttext{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+}
 
 #me{
     margin-right: 15px;
@@ -84,4 +125,32 @@ footer{
 #contact{
     padding: 10px;
     color: #777777;
+}
+
+
+#nameinput{
+    width: 905px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 6px;
+}
+
+#emailinput{
+    width: 905px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 6px;
+}
+
+#messageinput{
+    width: 915px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#submitbutton{
+    color: #ffffff;
+    background-color: #4aaaa5;
+    border: 1px solid #cccccc;
+    padding: 10px 40px;
 }
